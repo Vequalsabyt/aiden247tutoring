@@ -28,6 +28,24 @@
       text-align: center;
     }
 
+    /* Request button at top */
+    .intro .request-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 20px;
+      background: #0077cc;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: background 0.3s;
+    }
+
+    .intro .request-btn:hover {
+      background: #005fa3;
+    }
+
     /* HERO IMAGE */
     .hero img {
       width: 100%;
@@ -137,6 +155,9 @@
       Clear explanations, exam-focused strategies, and step-by-step problem solving —
       supported by interactive tools built specifically for students.
     </p>
+
+    <!-- BUTTON TO SCROLL TO FORM -->
+    <a href="#request-form" class="request-btn">Request Tutoring Session</a>
   </section>
 
   <!-- HERO IMAGE -->
@@ -161,7 +182,7 @@
   </section>
 
   <!-- REQUEST FORM -->
-  <section class="request">
+  <section class="request" id="request-form">
     <h2>Request a Tutoring Session</h2>
 
     <form action="#" method="post">
