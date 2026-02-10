@@ -1,63 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Aiden Warda | Physics & Math Tutoring</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aiden247 Tutoring</title>
 
-  <!-- Google tag (replace ID later) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'AW-XXXXXXXXX');
-  </script>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      background: #f7f7f7;
+      color: #222;
+    }
 
-  <link rel="stylesheet" href="style.css">
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h1, h2, h3 {
+      margin-bottom: 10px;
+    }
+
+    .intro {
+      text-align: center;
+    }
+
+    .hero img {
+      width: 100%;
+      max-height: 420px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    .request form {
+      background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .request input,
+    .request select,
+    .request button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 12px;
+      font-size: 1rem;
+    }
+
+    .request button {
+      background: #0077cc;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .request button:hover {
+      background: #005fa3;
+    }
+
+    .profile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .profile img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
 </head>
+
 <body>
 
-<header class="hero">
-  <img src="assets/hero.jpg" alt="Physics tutoring">
-  <h1>Physics & Math Tutoring</h1>
-  <p>Simple motion • Exams • Real understanding</p>
-</header>
-
-<section class="about">
-  <img src="assets/profile.jpg" alt="Aiden Warda">
-  <div>
-    <h2>About Me</h2>
+  <!-- 1️⃣ Intro text -->
+  <section class="intro">
+    <h1>Online Physics & IELTS Tutoring</h1>
     <p>
-      I’m Aiden Warda — TEFL/TESOL certified, Civil-Structural Engineer (EIT),
-      with 10+ years tutoring physics, math, and engineering fundamentals.
+      One-on-one tutoring for Physics and
+      <strong>IELTS exam preparation</strong>, including
+      <strong>Reading, Writing, Listening, and Speaking</strong>.
     </p>
-  </div>
-</section>
+    <p>
+      Clear explanations, real examples, exam strategies, and
+      step-by-step problem solving.
+    </p>
+  </section>
 
-<section class="cta">
-  <h2>Request Tutoring</h2>
+  <!-- 2️⃣ Hero image -->
+  <section class="hero">
+    <img src="assets/Hero.jpg" alt="Online tutoring session">
+  </section>
 
-  <form id="tutoringForm">
-    <input type="text" name="name" placeholder="Your name" required>
-    <input type="email" name="email" placeholder="Email" required>
-    <textarea name="message" placeholder="What do you need help with?" required></textarea>
+  <!-- 3️⃣ Tutoring request form -->
+  <section class="request">
+    <h2>Request a Tutoring Session</h2>
 
-    <button type="submit">Request Session</button>
-  </form>
-</section>
+    <!-- Replace action URL later with your real form handler -->
+    <form action="#" method="post">
+      <input type="text" name="name" placeholder="Your name" required>
+      <input type="email" name="email" placeholder="Your email" required>
 
-<footer>
-  <p>© 2026 — Built by Aiden Warda</p>
-</footer>
+      <select name="subject" required>
+        <option value="">Select subject</option>
+        <option>Physics</option>
+        <option>IELTS – Reading</option>
+        <option>IELTS – Writing</option>
+        <option>IELTS – Listening</option>
+        <option>IELTS – Speaking</option>
+      </select>
 
-<script>
-document.getElementById("tutoringForm").addEventListener("submit", function () {
-  gtag('event', 'conversion', {
-    'send_to': 'AW-XXXXXXXXX/CONTACT123'
-  });
-});
-</script>
+      <button type="submit">Submit Request</button>
+    </form>
+  </section>
+
+  <!-- 4️⃣ Profile -->
+  <section class="profile">
+    <img src="assets/Profile.jpg" alt="Aiden Warda">
+    <h3>Aiden Warda</h3>
+    <p>
+      Civil-Structural Engineer (EIT) and
+      <strong>TEFL-TESOL certified tutor</strong> with
+      10+ years of tutoring and teaching assistant experience.
+    </p>
+  </section>
+
+  <footer>
+    © 2026 · Built by Aiden Warda
+  </footer>
 
 </body>
 </html>
