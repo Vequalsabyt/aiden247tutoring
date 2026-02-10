@@ -28,14 +28,17 @@
       text-align: center;
     }
 
+    /* HERO IMAGE */
     .hero img {
       width: 100%;
-      max-height: 420px;
+      height: 520px;              /* taller to show more image */
       object-fit: cover;
+      object-position: center bottom; /* show bottom part */
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     }
 
+    /* FORM */
     .request form {
       background: #fff;
       padding: 25px;
@@ -45,11 +48,18 @@
 
     .request input,
     .request select,
+    .request textarea,
     .request button {
       width: 100%;
       padding: 12px;
       margin-top: 12px;
       font-size: 1rem;
+      font-family: inherit;
+    }
+
+    .request textarea {
+      resize: vertical;
+      min-height: 100px;
     }
 
     .request button {
@@ -64,6 +74,7 @@
       background: #005fa3;
     }
 
+    /* PROFILE */
     .profile {
       display: flex;
       flex-direction: column;
@@ -91,17 +102,16 @@
 
 <body>
 
-  <!-- 1️⃣ Intro text -->
+  <!-- 1️⃣ Intro -->
   <section class="intro">
-    <h1>Online Physics & IELTS Tutoring</h1>
+    <h1>Online Physics, Engineering & IELTS Tutoring</h1>
     <p>
-      One-on-one tutoring for Physics and
-      <strong>IELTS exam preparation</strong>, including
-      <strong>Reading, Writing, Listening, and Speaking</strong>.
+      One-on-one tutoring for <strong>Physics, Mathematics, and early-year University Engineering</strong>,
+      plus full <strong>IELTS preparation (all parts)</strong>.
     </p>
     <p>
-      Clear explanations, real examples, exam strategies, and
-      step-by-step problem solving.
+      Clear explanations, exam-focused strategies, and step-by-step problem solving —
+      built by an engineer who loves teaching.
     </p>
   </section>
 
@@ -110,23 +120,33 @@
     <img src="assets/hero.jpg" alt="Online tutoring session">
   </section>
 
-  <!-- 3️⃣ Tutoring request form -->
+  <!-- 3️⃣ Request form -->
   <section class="request">
     <h2>Request a Tutoring Session</h2>
 
-    <!-- Replace action later with real form handler -->
+    <!-- Replace action later with Google Form / backend -->
     <form action="#" method="post">
       <input type="text" name="name" placeholder="Your name" required>
       <input type="email" name="email" placeholder="Your email" required>
 
       <select name="subject" required>
         <option value="">Select subject</option>
-        <option>Physics</option>
+
+        <option>Physics (High School / Intro University)</option>
+        <option>Mathematics (High School / University)</option>
+        <option>University Engineering – 1st / 2nd Year</option>
+
+        <option>IELTS – All Parts</option>
         <option>IELTS – Reading</option>
         <option>IELTS – Writing</option>
         <option>IELTS – Listening</option>
         <option>IELTS – Speaking</option>
       </select>
+
+      <textarea
+        name="notes"
+        placeholder="Optional: What would you like help with? (topics, exam, deadline, etc.)">
+      </textarea>
 
       <button type="submit">Submit Request</button>
     </form>
